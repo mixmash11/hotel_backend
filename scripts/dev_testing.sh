@@ -1,3 +1,5 @@
 # Run testing and coverage
-docker-compose -f ../local.yml run --rm django coverage run -m pytest ; coverage report ; coverage html
-chromium-browser ../htmlcov/index.html
+docker-compose -f local.yml run django coverage run -m pytest
+docker-compose -f local.yml run django coverage report
+docker-compose -f local.yml run --rm django coverage html
+chromium-browser htmlcov/index.html

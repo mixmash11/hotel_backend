@@ -73,7 +73,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "hotel_backend.users.apps.UsersConfig",
-    # Your stuff: custom apps go here
+    "hotel_backend.hotel_management.apps.HotelManagementConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
